@@ -1,0 +1,147 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(250, 142, 0);
+}
+
+.element1 div {
+    color: black;
+}
+
+.element2 div {
+    background-color: rgb(229, 255, 0);
+    color: black;
+    font-size: medium;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    background-color: grey;
+}
+
+.title h1 {
+    font-size: 3em;
+    border-bottom: #ccc 1px solid;
+    padding-bottom: 1rem;
+}
+
+.home p {
+    text-align: justify;
+}
+
+header {
+    min-height: 70px;
+    background-color: firebrick;
+}
+
+main {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.menu li {
+    padding: 20px;
+    min-width: 100px;
+}
+
+.menu a:link {
+    color: rgb(217, 255, 0);
+    text-decoration: none;
+}
+
+.menu a:visited {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.menu a:active {
+    color: indigo;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(192, 7, 7);
+    color: rgb(255, 208, 0);
+}
+
+footer p {
+    line-height: 35px;
+}
+
+footer .container {
+    display: flex;
+}
+
+footer .menu a {
+    color: crimson;
+}
+
+div.box {
+    width: 400px;
+    display: inline-block;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+[data-tooltip] {
+    position: relative;
+    font-weight: bold;
+}
+
+[data-tooltip]:after {
+    display: none;
+    position: absolute;
+    content: attr(data-tooltip);
+    white-space: normal;
+    color: rgb(115, 255, 0);
+}
+
+[data-tooltip]:hover:after {
+    display: block;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    top:50px;
+    left:165px;
+}
+
+canvas {
+    position: static;
+    margin: auto;
+    bottom: 0;
+    background-color: rgb(245, 245, 245);
+}
+    
+   img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    }
+
