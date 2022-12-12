@@ -1,0 +1,168 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.element1 div {
+    color: black;
+}
+
+.element2 div {
+    background-color: rgb(79, 83, 73);
+    color: black;
+    font-size: medium;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    background-color: grey;
+}
+
+.title h1 {
+    font-size: 3em;
+    border-bottom: #ccc 1px solid;
+    padding-bottom: 1rem;
+}
+
+.title h2 {
+    font-size: 3em;
+    border-bottom: #ccc 1px solid;
+    padding-bottom: 1rem;
+}
+
+.home p {
+    text-align: justify;
+}
+
+header {
+    min-height: 70px;
+    background-color: rgb(1, 129, 33);
+}
+
+main {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.menu li {
+    padding: 20px;
+    min-width: 100px;
+}
+
+.menu a:link {
+    color: rgb(238, 255, 0);
+    text-decoration: none;
+}
+
+.menu a:visited {
+    color: rgb(255, 230, 0);
+    text-decoration: none;
+}
+
+.menu a:active {
+    color: indigo;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(1, 129, 33);
+    color: rgb(255, 251, 0);
+    margin-top: 100px;
+}
+
+footer p {
+    line-height: 5px;
+}
+
+footer .container {
+    display: flex;
+}
+
+footer .menu a {
+    color: crimson;
+}
+
+div.box {
+    width: 400px;
+    display: inline-block;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+canvas {
+    position: static;
+    margin: auto;
+    bottom: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.MenuPrincipal{
+    width: 90%;
+}
+
+.MenuPrincipal div{
+    display: inline-block;
+}
+
+.farofa{
+    width: 35%;
+    margin-top: 100px;
+    margin-bottom: 500px;
+}
+
+.farofa img{
+    width: 250px;
+        transition: all 0.5s;
+        cursor: pointer;
+}
+
+.lasanha {
+    width: 40%;
+    vertical-align: 550px;
+    color: white;
+}
+
+
+.lasanha span {
+    color: rgb(54, 233, 0);
+}
+
+
+.lasanha h2 {
+    color: white;
+    font-size: 30px;
+}
+
+p{
+   line-height: 9px; 
+   font-size: 20px;
+}
+
+img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    }
+
+.fimal p{
+    color: rgb(255, 251, 17);
+    text-align: center;
+}
