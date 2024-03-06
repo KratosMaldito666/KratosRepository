@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Image</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        /* Importa a fonte do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            background-color: #FFC0CB; /* Rosa claro */
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Altura mínima da viewport */
+        }
+        #image-container {
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #image-container img {
+            max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+            max-height: 300px; /* Define uma altura máxima para a imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 50%;
+            border: 5px solid #FF69B4; /* Rosa forte */
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+        #image-container img:hover {
+            transform: scale(1.1);
+        }
+        h1 {
+            font-size: 24px; /* Tamanho do texto ajustável */
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>clique aqui para ser uma meninae também</h1>
+    <div id="image-container">
+        <img src="img/primeira_imagem.png" alt="Imagem 1" id="imagem">
+    </div>
+
+    <script>
+        function toggleImage() {
+            var imagem = document.getElementById("imagem");
+    
+            var currentSrc = imagem.src;
+         
+            if (currentSrc.includes("img/primeira_imagem.png")) {
+                imagem.src = "img/segunda_imagem.jpeg";
+            } else {
+                imagem.src = "img/primeira_imagem.png";
+            }
+        }
+
+        document.getElementById("image-container").addEventListener("click", toggleImage);
+    </script>
+</body>
+</html>
